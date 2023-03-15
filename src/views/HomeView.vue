@@ -3,17 +3,21 @@
     <!-- 輪播 -->
     <Carousel />
     <!-- 買/賣盤價 -->
-    <PriceTable/>
+    <PriceTable />
 
     <main class="main-content">
       <div class="about-us">
         <div class="about-text">
-          <img class='about-us-title' src="" alt="">
-          <div class="about-us-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero possimus molestiae perspiciatis, eaque culpa nam unde laboriosam quia doloremque minima.</div>
+          <img class="about-us-title" src="" alt="" />
+          <div class="about-us-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            possimus molestiae perspiciatis, eaque culpa nam unde laboriosam
+            quia doloremque minima.
+          </div>
         </div>
         <div class="about-img">
           111
-          <img src="" alt="">
+          <img src="" alt="" />
         </div>
       </div>
     </main>
@@ -21,21 +25,20 @@
 </template>
 
 <script>
-
-import Carousel from '@/components/Carousel.vue'
-import PriceTable from '@/components/PriceTable.vue'
+import Carousel from "@/components/Carousel.vue";
+import PriceTable from "@/components/PriceTable.vue";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
-    Carousel, PriceTable
-  }
-}
+    Carousel,
+    PriceTable,
+  },
+};
 </script>
 
 <style lang="scss">
-
-.about-us{
+.about-us {
   display: flex;
 }
 </style>

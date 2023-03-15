@@ -1,12 +1,10 @@
 <template>
-
   <!-- 之後價格有要從上層丟資料進來，再寫props接資料 -->
   <!-- 盤價 -->
   <div class="price-table">
-
     <!-- Usdt icon -->
     <div class="usdt-col">
-      <img src="../assets/USDT.png" alt="usdt-logo" class="usdt-logo">
+      <img src="../assets/USDT.png" alt="usdt-logo" class="usdt-logo" />
       &nbsp;
       <span>USDT</span>
     </div>
@@ -29,27 +27,23 @@
     <div class="button-col">
       <button class="exchange-btn">立即交易</button>
     </div>
-
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'PriceTable',
-}
+  name: "PriceTable",
+};
 </script>
 
-
 <style lang="scss">
-
 @mixin inCenter {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.price-table{
+.price-table {
   display: flex;
   position: relative;
   width: 55%;
@@ -60,73 +54,70 @@ export default {
   left: 50%;
   transform: translateX(-50%);
 
-  div{
-    flex:1;
+  div {
+    flex: 1;
   }
 }
 
-.usdt-logo{
+.usdt-logo {
   width: 25px;
 }
 
-
-.usdt-col{
+.usdt-col {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
-.price-col{
+.price-col {
   @include inCenter();
   flex-direction: column;
 
-  .buy-col, .sell-col{
+  .buy-col,
+  .sell-col {
     @include inCenter();
   }
 }
 
-.button-col{
+.button-col {
   @include inCenter();
 }
 
-.exchange-btn{
-    width: 110px;
-    padding: 5px;
-    border-radius: 200px;
-    border: none;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-    background: linear-gradient(to left, #3DA1E6, #61CDAE);
+.exchange-btn {
+  width: 110px;
+  padding: 5px;
+  border-radius: 200px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(to left, #3da1e6, #61cdae);
 }
 
-.buy-icon, .sell-icon{
+.buy-icon,
+.sell-icon {
   width: 20px;
   height: 20px;
   text-align: center;
   color: rgb(250, 250, 250);
-  font-size: .25rem;
-  line-height:20px;
+  font-size: 0.25rem;
+  line-height: 20px;
   border-radius: 2px;
 }
 
-.sell-icon{
-  background-color: #00B900;
+.sell-icon {
+  background-color: #00b900;
 }
 
 .buy-icon {
-  background-color: #FA5151;
+  background-color: #fa5151;
 }
 
-
-
 @media screen and (max-width: 768px) {
-
-  .price-table{
+  .price-table {
     width: 90%;
   }
-
 }
 </style>
